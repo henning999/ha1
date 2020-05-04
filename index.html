@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="de">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -8,12 +8,69 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>TODO</title>
   </head>
   <body>
-	<div class="container">
+	<div class="container text-center">
     	<h1>TODO</h1>
 	</div>
+    <div class="container">
+        <p class="text-center"></p>
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Todos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Neu</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Bearbeitung</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="#">Impressum</a>
+            </li>
+        </ul>
+    </div>
+    <div class="container">
+        <h2>Todo-List</h2>
+        <p></p>
+        <table class="table table-striped table-responsive">
+            <thead>
+            <tr>
+                <th>Todo-Name</th>
+                <th>Deadline</th>
+                <th>Bearbeitung</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Hausaufgabe 1 im Modul skalierbare Systeme</td>
+                <td>24/12/2021</td>
+                <td>0%</td>
+                <td><button type="button" class="btn btn-success">Bearbeiten</button>
+                    <button type="button" class="btn btn-danger">Löschen</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Hausaufgabe 2 </td>
+                <td>31/12/2021</td>
+                <td>11%</td>
+                <td><button type="button" class="btn btn-success">Bearbeiten</button>
+                    <button type="button" class="btn btn-danger">Löschen</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Hausaufgabe 3 ist zu Bearbeiten in einer Gruppengröße von 5-6 Personen </td>
+                <td>07/07/2018</td>
+                <td>22%</td>
+                <td><button type="button" class="btn btn-success">Bearbeiten</button>
+                    <button type="button" class="btn btn-danger">Löschen</button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
