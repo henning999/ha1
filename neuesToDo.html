@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Neues TODO anlegen</h2>
+  <!--<p>Geben Sie die neue Aufgabe ein:</p>-->
+  <form action="/action_page.php">
+	
+    <div class="form-group">
+      <label for="comment">Geben Sie die neue Aufgabe ein (empfohlen ca. 160 Zeichen):</label>
+      <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+    </div>
+	<div class="form-group"> <!--von hier-->
+  		<label for="date">Geben Sie die Frist für die neue Aufgabe ein:</label>
+  		<input type="date" class="form-control" id="date">
+	</div> <!--bis hier-->
+    <button type="submit" class="btn btn-primary">Speichern</button>
+  </form>
+</div>
+
+</body>
+</html>
